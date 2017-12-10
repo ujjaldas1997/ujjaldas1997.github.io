@@ -35,7 +35,7 @@ How to switch from console mode to GUI mode
 ### Benifits of console mode
 - Low RAM usage in console mode(you can see it by `htop`) ![Console RAM](https://raw.githubusercontent.com/ujjaldas1997/Data_images/master/blogs/console_ram.jpg)
 - While in GUI the RAM usage is ![GUI RAM](https://raw.githubusercontent.com/ujjaldas1997/Data_images/master/blogs/gui_ram.jpg)
-See how RAM usage is decreased in console mode
+##### See how RAM usage is decreased in console mode
 ### Problems of console mode
 - You can do all the things that you usually do in terminal(you can't browse, play a video etc)
 
