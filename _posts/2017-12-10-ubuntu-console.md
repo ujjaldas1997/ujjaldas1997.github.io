@@ -4,9 +4,9 @@ title:  "Switching to console"
 date:   2017-12-10T23:39:51
 desc: "Documentation of how I switched from GUI to console mode"
 keywords: "Ubuntu 16.04LTS,blog,console mode,grub,tty"
-categories: [HTML]
+categories: [LINUX]
 tags: [Ubuntu 16.04LTS,blog,console mode]
-icon: icon-html
+icon: icon-linux
 ---
 
 How to switched from GUI to console mode:
