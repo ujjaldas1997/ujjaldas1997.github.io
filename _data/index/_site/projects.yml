@@ -31,7 +31,7 @@
   url: https://github.com/ujjaldas1997/coala/blob/master/README.rst
   gh_user: ujjaldas1997
   repo: coala
-  img: https://avatars2.githubusercontent.com/u/10620750?s=70&v=4
+  img: https://cloud.githubusercontent.com/assets/5716520/24838296/a9cf5f04-1d45-11e7-855c-47b816ce1e09.png
   desc: "coala provides a unified interface for linting and fixing code with a single configuration file, regardless of the programming languages used."
 
 - name: QRCodeReader
@@ -45,10 +45,10 @@
 
 - name: Family Organizer
 #  i18n:
-#  url: 
-#  gh_user: 
-#  repo: 
-  img: https://raw.githubusercontent.com/ujjaldas1997/Data_images/master/blogs/family-organizer.jpg
+  url: 
+  gh_user: 
+  repo: 
+  img: 
   desc: "Web based application for family members for chatting, event planning, event scheduling, reminder, monthly paying, shopping list sharing"
 
 #- name: Jalpc
