@@ -16,7 +16,7 @@ How to switched from GUI to console mode:
   - Comment the line `GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"` by adding a `#` at the beginning of the line
   - Change the line `GRUB_CMDLINE_LINUX=""` to `GRUB_CMDLINE_LINUX="text"`
   - Uncomment the line `#GRUB_TERMINAL=console` by removing `#` at the beginning
-  - The above change will look like {% raw %}$\\${% endraw %}![vi editor](https://raw.githubusercontent.com/ujjaldas1997/Data_images/master/blogs/vi_grub.jpg){% raw %}$\\${% endraw %}
+  - The above change will look like {% raw %}$a^2${% endraw %}![vi editor](https://raw.githubusercontent.com/ujjaldas1997/Data_images/master/blogs/vi_grub.jpg){% raw %}$\\${% endraw %}
   - Save the file `grub` by `esc` then `:wq`
   - Now go to terminal and type `sudo update-grub`
 - Finally change the symlink of Systemd `default.target` from `graphical.target` to `multi-user.target`
