@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Full-stack Machine Learning Notebook</title>
-    <description>Joining the dots between Machine Learning and Full-stack App Development</description>
+    <title>Home</title>
+    <description>Finding a way to automate boring stuff whichever is possible</description>
     <link>https://ujjaldas1997.github.io/</link>
     <atom:link href="https://ujjaldas1997.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Dec 2017 19:35:47 +0530</pubDate>
-    <lastBuildDate>Sat, 16 Dec 2017 19:35:47 +0530</lastBuildDate>
+    <pubDate>Tue, 19 Dec 2017 11:33:42 +0530</pubDate>
+    <lastBuildDate>Tue, 19 Dec 2017 11:33:42 +0530</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -60,7 +60,7 @@
         <category>console mode</category>
         
         
-        <category>LINUX</category>
+        <category>Linux</category>
         
       </item>
     
