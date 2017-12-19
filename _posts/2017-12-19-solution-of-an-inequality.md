@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Switching to console"
+title:  "Inequality"
 date:   2017-12-10T23:39:51
-desc: "Documentation of how I switched from GUI to console mode"
-keywords: "Ubuntu 16.04LTS,blog,console mode,grub,tty"
+desc: "Number of solutions of inequality given constraints"
+keywords: "Combinatories,blog,Math,Inequality,Coding"
 categories: [Math]
-tags: [Combinatories,blog,Inequality, Programming]
+tags: [Combinatories,blog,Inequality,Programming]
 icon: fa-math
 ---
 
@@ -120,4 +120,3 @@ So the total number of solutions for (13) is $4^{10} - 1$
 The total number of solution of equation (1) is $4^{10} - \left(4^{10} - 1\right) = 1$
 
 ---
-
