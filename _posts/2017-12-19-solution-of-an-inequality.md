@@ -47,7 +47,7 @@ We can find all the solutions for $x_j \ge 1$ (**case - 1**) and for $x_j \ge 5$
 
 __Case - 1__ -  
 Let's substitute $x_j^{'} = x_j - 1$ in (2) so that $x_j \ge 1$ will be eventually $x_j^{'} \ge 0$  
-The equation will be $$x_1^{'} + x_2^{'} + \dots + x_{10}^{'} \le 29 \, for \, x_j^{'} \ge 0$$  
+The equation will be  $$x_1^{'} + x_2^{'} + \dots + x_{10}^{'} \le 29 \, for \, x_j^{'} \ge 0$$  
 Rewritting the above equation with modification of variable $$x_1 + x_2 + \dots + x_{10} \le 29 \, for \, x_j \ge 0 \tag{3}$$
 To convert inequality (3) to an equation, introduce a new variable 'w'
 $$x_1 + x_2 + \dots + x_{10} + w = 29 \, for \, x_j \ge 0 \, and \, w \ge 0 \tag{4}$$
@@ -107,9 +107,7 @@ The total number of solution of equation (1) is $4^{10} - \left(4^{10} - 1\right
 However there is also an easier method.  
 Let $y_j = 5 - x_j \, for \, 1 \le j \le 10$. Then each $y_i$ is a positive integer satisfying $1 \le y_i \le 4$(as minimum value of $x_j = 1$ and
  maximum value of $x_j = 4$)  
-We can construct an equation from (2) as  $$50 - y_1 - y_2 - \dots - y_{10} \le 39 \, for \, y_j \ge 1$$  
-$$\implies y_1 + y_2 + \dots + y_{10} \ge 11 \, for \, y_j \ge 1$$  
-$$\implies y_1 + y_2 + \dots + y_{10} \ge 1 \, for \, y_j \ge 0 \tag{13}$$
+We can construct an equation from (2) as  $$50 - y_1 - y_2 - \dots - y_{10} \le 39 \, for \, y_j \ge 1 \\ \implies y_1 + y_2 + \dots + y_{10} \ge 11 \, for \, y_j \ge 1 \\ \implies y_1 + y_2 + \dots + y_{10} \ge 1 \, for \, y_j \ge 0 \tag{13}$$
 
 To find solution for (13), let's find solution for $$y_1 + y_2 + \dots + y_{10} \le 0 \, for \, y_j \ge 0 \tag{14}$$ and subtract (13) from $4^{10}$
 
