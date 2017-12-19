@@ -47,10 +47,10 @@ We can find all the solutions for $x_j \ge 1$ (**case - 1**) and for $x_j \ge 5$
 
 __Case - 1__ -  
 Let's substitute $x_j^{'} = x_j - 1$ in (2) so that $x_j \ge 1$ will be eventually $x_j^{'} \ge 0$  
-The equation will be $$x_1^{'} + x_2^{'} + \dots + x_10^{'} \le 29 \, for \, x_j^{'} \ge 0$$  
-Rewritting the above equation with modification of variable $$x_1 + x_2 + \dots + x_10 \le 29 \, for \, x_j \ge 0 \tag{3}$$
+The equation will be $$x_1^{'} + x_2^{'} + \dots + x_{10}^{'} \le 29 \, for \, x_j^{'} \ge 0$$  
+Rewritting the above equation with modification of variable $$x_1 + x_2 + \dots + x_{10} \le 29 \, for \, x_j \ge 0 \tag{3}$$
 To convert inequality (3) to an equation, introduce a new variable 'w'
-$$x_1 + x_2 + \dots + x_10 + w = 29 \, for \, x_j \ge 0 \, and \, w \ge 0 \tag{4}$$
+$$x_1 + x_2 + \dots + x_{10} + w = 29 \, for \, x_j \ge 0 \, and \, w \ge 0 \tag{4}$$
 Now we can apply the above proved formula to (4)
 
 Total number of solutions = $$\binom{29+11-1}{11-1} = \binom{39}{10}$$
@@ -58,9 +58,9 @@ Total number of solutions = $$\binom{29+11-1}{11-1} = \binom{39}{10}$$
 __Case - 2__ -  
 In the equation (3), let $x_1 \ge 5 \, and \, x_j \ge 1 \, for \, 2 \le j \le 10$  
 Now substituting $x_1^{'} = x_1 - 5 \, and \, x_j^{'} = x_j - 1$ in (2), we get the equation
-$$x_1 + x_2 + \dots + x_10 \le 25 \, for \, x_j \ge 0 \tag{5}$$
+$$x_1 + x_2 + \dots + x_{10} \le 25 \, for \, x_j \ge 0 \tag{5}$$
 To convert (5) to an equation, introducing a new variable 'w'  
-$$x_1 + x_2 + \dots + x_10 + w = 25 \, for \, x_j \ge 0 \, and \, w \ge 0 \tag{6}$$
+$$x_1 + x_2 + \dots + x_{10} + w = 25 \, for \, x_j \ge 0 \, and \, w \ge 0 \tag{6}$$
 Now we can apply formula to (6)  
 
 Answer = $$\binom{25+11-1}{11-1} = \binom{35}{10}$$  
@@ -75,7 +75,7 @@ Total number of solutions of equation (2) is $$\binom{39}{10} - \binom{10}{1} \t
 We have subtracted those cases where at least 2 variables exceed 4 simultaneously. In case 2, we have calculated the number of solutions for at 
 least one $x_j \ge 5$. This also includes the solutions for at least two $x_j \ge 5$, and that is what we have subtracted additionally. So we need 
 to add them back to the answer. _How many times will we add them?_  Well, As we should calculate exactly one $x_j \ge 5$, and we have two numbers of
- $x_j$ so to select only one $x_j$, we have two choices($\binom{2}{1}$). Look at (8), there we had subtracted two $x_j$. But we were supposed to 
+ $x_j$ so to select only one $x_j$, we have two choices i.e. $\binom{2}{1}$ . Look at (8), there we had subtracted two $x_j$. But we were supposed to 
 subtract only once. That is why we need to add them back to (8) once.  
 
 Similar to the above methods (7) we have done here, we can find that the total number of solutions for at least two $x_j \ge 5$ will be 
@@ -107,8 +107,7 @@ The total number of solution of equation (1) is $4^{10} - \left(4^{10} - 1\right
 However there is also an easier method.  
 Let $y_j = 5 - x_j \, for \, 1 \le j \le 10$. Then each $y_i$ is a positive integer satisfying $1 \le y_i \le 4$(as minimum value of $x_j = 1$ and
  maximum value of $x_j = 4$)  
-We can construct an equation from (2) as  
-$$50 - y_1 - y_2 - \dots - y_{10} \le 39 \, for \, y_j \ge 1$$  
+We can construct an equation from (2) as$$50 - y_1 - y_2 - \dots - y_{10} \le 39 \, for \, y_j \ge 1$$
 $$\implies y_1 + y_2 + \dots + y_{10} \ge 11 \, for \, y_j \ge 1$$
 $$\implies y_1 + y_2 + \dots + y_{10} \ge 1 \, for \, y_j \ge 0 \tag{13}$$
 
@@ -116,8 +115,8 @@ To find solution for (13), let's find solution for $$y_1 + y_2 + \dots + y_{10} 
 
 The total number of solutions for (14) is $\binom{0+11-1}{11-1} = 1$
 
-So the total number of solutions for (13) is $4^{10} - 1$
-**Now coming to the original equation (1)**
+So the total number of solutions for (13) is $4^{10} - 1$  
+**Now coming to the original equation (1)**  
 The total number of solution of equation (1) is $4^{10} - \left(4^{10} - 1\right) = 1$
 
 ---
