@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Inequality"
-date:   2017-12-10T23:39:51
+date:   2017-12-19T23:39:51
 desc: "Number of solutions of inequality given constraints"
 keywords: "Combinatories,blog,Math,Inequality,Coding"
 categories: [Math]
@@ -40,7 +40,7 @@ Now how can we solve this problem with **No of solutions of an inequality**
 The total number of possible outcomes are $4^{10}$
 We have to find the solutions of the inequality $$x_1 + x_2 + \dots + x_{10} \ge 40  \, for \, 1 \le x_j \le 4 \tag{1}$$ where $1 \le j \le 10$
 
-Let's find out the solution for the inequality $$x_1 + x_2 + \dots + x_10 \le 39 \tag{2}$$ and finally subtract this result from $4^{10}$
+Let's find out the solution for the inequality $$x_1 + x_2 + \dots + x_{10} \le 39 \tag{2}$$ and finally subtract this result from $4^{10}$
 
 In (1), $1 \le x_j \le 4$  
 We can find all the solutions for $x_j \ge 1$ (**case - 1**) and for $x_j \ge 5$(**case - 2**) and finally subtract **case - 1** from **case - 2**
@@ -107,8 +107,8 @@ The total number of solution of equation (1) is $4^{10} - \left(4^{10} - 1\right
 However there is also an easier method.  
 Let $y_j = 5 - x_j \, for \, 1 \le j \le 10$. Then each $y_i$ is a positive integer satisfying $1 \le y_i \le 4$(as minimum value of $x_j = 1$ and
  maximum value of $x_j = 4$)  
-We can construct an equation from (2) as$$50 - y_1 - y_2 - \dots - y_{10} \le 39 \, for \, y_j \ge 1$$
-$$\implies y_1 + y_2 + \dots + y_{10} \ge 11 \, for \, y_j \ge 1$$
+We can construct an equation from (2) as  $$50 - y_1 - y_2 - \dots - y_{10} \le 39 \, for \, y_j \ge 1$$  
+$$\implies y_1 + y_2 + \dots + y_{10} \ge 11 \, for \, y_j \ge 1$$  
 $$\implies y_1 + y_2 + \dots + y_{10} \ge 1 \, for \, y_j \ge 0 \tag{13}$$
 
 To find solution for (13), let's find solution for $$y_1 + y_2 + \dots + y_{10} \le 0 \, for \, y_j \ge 0 \tag{14}$$ and subtract (13) from $4^{10}$
