@@ -9,12 +9,12 @@ tags: [Combinatories,blog,Inequality,Programming]
 icon: fa-math
 ---
 
-#No of solutions of an inequality
+# No of solutions of an inequality
 
-##Statement
+## Statement
 Lets the inequality be $$x_1 + x_2 + \dots + x_k \le p$$ subjected to constraints $a_1 \le x_j \le a_2 \forall 1 \le j \le k$
 
-#Pre-requisties
+# Pre-requisties
 Total number of ways of distributing 'n' identical objects to 'p' persons such that each receives 0, 1 or more than 1 objects is$$\Comb{n+p-1}{p-1}$$
 Proof:
 $$x_1 + x_2 + \dots + x_p = n$$
@@ -24,11 +24,11 @@ Now co-efficient of $x^n$ in $\left(x^0 + x^1 + \dots + x^n\right)^p$
 $\implies$ co-efficient of $x^n$ in $\left(\frac{1 - x^{n+1}}{1 - x}\right)$
 $\implies$ co-efficient of $x^n$ in $\left(1 - x\right)^{-p} = \Comb{p+n-1}{n} = \Comb{n+p-1}{p-1}$
 
-##Let's take an example
+## Let's take an example
 
 **Given 10 dices each having 4 faces are rolled at a time. Find the number of solutions so that the sum of outcomes of dices will be at least equal to 40**
 
-##Solution
+## Solution
 The answer of the above problem will be **1** as there is only one combination {4, 4, ... 10 times} exist for all of it to sum up to get 40. And 
 also from sum of outcomes 41 onwards, there will be no combinations possible for a four faced dice.
 
@@ -36,7 +36,7 @@ Now how can we solve this problem with **No of solutions of an inequality**
 
 ---
 
-####Method - 1
+#### Method - 1
 The total number of possible outcomes are $4^{10}$
 We have to find the solutions of the inequality $$x_1 + x_2 + \dots + x_10 \ge 40  \forall 1 \le x_j \le 4 \tag{1}$$ where $1 \le j \le 10$
 
@@ -103,7 +103,7 @@ The total number of solution of equation (1) is $4^{10} - \left(4^{10} - 1\right
 
 ---
 
-####Method - 2
+#### Method - 2
 However there is also an easier method.
 Let $y_j = 5 - x_j for 1 \le j \le 10$. Then each $y_i$ is a positive integer satisfying $1 \le y_i \le 4$(as minimum value of $x_j = 1$ and
  maximum value of $x_j = 4$)
