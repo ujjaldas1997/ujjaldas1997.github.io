@@ -118,3 +118,85 @@ So the total number of solutions for (13) is $4^{10} - 1$
 The total number of solution of equation (1) is $4^{10} - \left(4^{10} - 1\right) = 1$
 
 ---
+
+# Programming
+Now let's write code in c++ about what we have done so far  -  
+```
+#include<bits/stdc++.h>
+using namespace std;
+double combination(int n, int m){
+    /*
+    * This is a function that returns combination
+    * of two integer numbers
+    */
+	if((m > n) or (n < 0) or (m < 0))
+		return 0;
+	else if(n == m or m == 0)
+		return 1;
+	double temp = 1;
+	for(int i = 1; i <= m; ++i){
+		temp = (temp * n) / i;
+		--n;
+	}
+	return temp;
+}
+double process(int result, int n, int N){
+	// Calculate for value atmost result - 1
+	// and finally subtract from the total
+	// sample space
+	result = result - 1;
+	double prob = combination(result, N);
+	double to_exclude = 0;
+	int cnt = 1;
+	bool add = true;
+	while(result >= N){
+        result -= n;
+        // Inclusion exclusion property
+        if(add)
+            to_exclude += combination(N, cnt) * combination(result, N);
+        else
+            to_exclude -= combination(N, cnt) * combination(result, N);
+        add = !add;
+        ++cnt;
+	}
+	prob = 1 - ((prob - to_exclude) / pow(n , N));
+	// Ignore all the impossible cases
+	if(prob > 1)
+        return 0;
+	return prob;
+}
+int main(){
+	int T;
+	cin >> T;           // Test cases
+	for(int i = 1; i <= T; ++i){
+		int result, n, N;
+		cin >> result >> n >> N;        // Input given
+        double prob = process(result, n, N);
+		cout << "Rolling a dice having " << n << " faces " << N << " times, the probability that getting sum of outcomes atleast "
+		<< result << " is " << prob << endl;
+	}
+	return 0;
+}
+```
+#### Input
+The first line consists of T test cases. The following T lines consists of 3 integers
+- sum of outcomes to be atleast a number
+- Number of faces of a dice
+- Total number of dices
+Now input given to be  
+```
+4
+2 2 2
+20 6 10
+2 8 1
+40 8 5
+```
+The output will be  
+```
+Rolling a dice having 2 faces 2 times, the probability that getting sum of outcomes atleast 2 is 1
+Rolling a dice having 6 faces 10 times, the probability that getting sum of outcomes atleast 20 is 0.99852
+Rolling a dice having 8 faces 1 times, the probability that getting sum of outcomes atleast 2 is 0.875
+Rolling a dice having 8 faces 5 times, the probability that getting sum of outcomes atleast 40 is 3.05176e-05
+```
+
+---
