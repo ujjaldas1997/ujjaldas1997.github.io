@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Storing function arguments"
-date:   2017-12-10T23:39:51
+date:   2017-12-21T02:39:51
 desc: "Sequence of function arguments stored in stack"
 keywords: "Programming,blog,C/C++,Function,Arguments"
 categories: [Programming]
