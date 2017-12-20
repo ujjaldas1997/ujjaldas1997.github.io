@@ -16,7 +16,7 @@ Lets the inequality be $$x_1 + x_2 + \dots + x_k \le p$$ subjected to constraint
 
 # Pre-requisties
 Total number of ways of distributing 'n' identical objects to 'p' persons such that each receives 0, 1 or more than 1 objects is $$\binom{n+p-1}{p-1}$$  
-Proof:  
+Proof:    
 $$x_1 + x_2 + \dots + x_p = n$$
 where $0 \le x_j \le n \, for \, 1 \le j \le n$
 
@@ -182,7 +182,8 @@ int main(){
 The first line consists of T test cases. The following T lines consists of 3 integers
 - sum of outcomes to be atleast a number
 - Number of faces of a dice
-- Total number of dices
+- Total number of dices  
+
 Now input given to be  
 ```
 4
