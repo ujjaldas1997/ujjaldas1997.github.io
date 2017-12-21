@@ -9,7 +9,7 @@ tags: [Ubuntu 16.04LTS,blog,console mode]
 icon: fa-linux
 ---
 
-How to switched from GUI to console mode:
+# How to switched from GUI to console mode:
 - Edit the `grub` file in `/etc/default/` location
   - Press `ctrl + alt + T` to open terminal
   - Type `sudo vi /ect/default/grub` and change the following
