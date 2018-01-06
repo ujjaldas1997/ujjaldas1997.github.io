@@ -23,7 +23,7 @@ icon: fa-linux
   - Save the file `grub` by `esc` then `:wq`
   - Now go to terminal and type `sudo update-grub`
 - Finally change the symlink of Systemd `default.target` from `graphical.target` to `multi-user.target`
-  - To do the above type `sudo systemctl set-default multiuser.target`
+  - To do the above type `sudo systemctl set-default multi-user.target`
   - You can conform it by typing `sudo systemctl get-default`
   - Now reboot the system
 
