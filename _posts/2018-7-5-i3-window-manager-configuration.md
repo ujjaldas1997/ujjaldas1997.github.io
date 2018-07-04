@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Switching to console"
+title:  "Configuring i3 window manager"
 date:   2018-7-5T00:04:51
 desc: "Documentation of my personal i3 window manager configuration"
 keywords: "Ubuntu 16.04LTS, blog, i3 window manager, tiling manager"
