@@ -10,6 +10,8 @@ icon: fa-linux
 ---
 
 # Configure VIM:
+- Clone `.vim` from github
+  - `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 - Add the following in your `.vimrc` file in `~` path
   ```
   set nocompatible              " be iMproved, required
