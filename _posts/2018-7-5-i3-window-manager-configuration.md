@@ -136,7 +136,7 @@ icon: fa-linux
   # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
   bindsym $mod+Shift+r restart
   # exit i3 (logs you out of your X session)
-  bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+  bindsym $mod+Shift+e exec # "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
   # resize window (you can also use the mouse for that)
   mode "resize" {
@@ -174,13 +174,15 @@ icon: fa-linux
   bindsym $mod+m exec i3lock -c 000000 -n
 
   # Pulse Audio controls
-  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
-  bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
+  bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% && notify-send 'volume-up' #increase sound volume
+  bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% && notify-send 'volume-down' #decrease sound volume
   bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
-  # Sreen brightness controls
-  bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-  bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+  # Screen brightness controls with notification
+  # increase screen brightness with notification
+  bindsym XF86MonBrightnessUp exec "light -A 1; notify-send 'brightness up'"
+  # decrease screen brightness with notification
+  bindsym XF86MonBrightnessDown exec "light -U 1; notify-send 'brightness down'"
   ```
 
 ---
